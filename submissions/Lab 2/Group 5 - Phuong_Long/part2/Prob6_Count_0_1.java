@@ -6,7 +6,7 @@ package lab2_continue;
 import java.util.Arrays;
 
 /**
- * @author FredsFreshDeals
+ * @author phuongnguyen, longhuynh
  *
  */
 public class Prob6_Count_0_1 {
