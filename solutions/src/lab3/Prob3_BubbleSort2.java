@@ -1,24 +1,22 @@
 package lab3;
 
-public class BubbleSort1 {
+public class Prob3_BubbleSort2 {
 
 	public static void main(String[] args) {
-		int[] items = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+		int[] items = new int[] { 6, 7, 3, 5, 1, 2, 9 };
 		items = Sort(items);
 		for (int i = 0; i < items.length; i++) {
-			System.out.println(items[i] + " ");
+			System.out.print(items[i] + " ");
 		}
 	}
 
-	// If parameter is sorted list
-	// The if clause in for loop never happen
-	// That's mean swapped = false;
-	// So O(n) for this solution
 	public static int[] Sort(int[] items) {
 		boolean swapped;
+		int times = 0;
 		do {
 			swapped = false;
-			for (int i = 1; i < items.length; i++) {
+			// times variable will cut the running time of BubbleSort in half.
+			for (int i = 1; i < items.length - times; i++) {
 				if (items[i - 1] > items[i]) {
 					int temp = items[i - 1];
 					items[i - 1] = items[i];
@@ -26,9 +24,10 @@ public class BubbleSort1 {
 					swapped = true;
 				}
 			}
+
+			times++;
 		} while (swapped);
 
 		return items;
 	}
-
 }

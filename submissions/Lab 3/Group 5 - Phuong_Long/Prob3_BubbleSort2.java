@@ -1,6 +1,6 @@
 package lab3;
 
-public class BubbleSort2 {
+public class Prob3_BubbleSort2 {
 
 	public static void main(String[] args) {
 		int[] items = new int[] { 6, 7, 3, 5, 1, 2, 9 };
