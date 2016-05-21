@@ -1,4 +1,4 @@
-package linkedlist;
+package lec8;
 
 public class SinglyLinkedList {
 		private Node head;  //zeroth element
